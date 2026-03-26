@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perfil</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            cosmicLatte: '#FFF8E7',
+            sangria: '#930500',
+            cornflower: '#95BBEA',
+            darkBg: '#2B0A0A',
+            darkCard: '#3A1010',
+            darkText: '#F8EBD8'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-cosmicLatte text-sangria dark:bg-darkBg dark:text-darkText min-h-screen flex flex-col transition-colors duration-300">
+
+  <header class="w-full bg-sangria text-cosmicLatte dark:bg-darkCard dark:text-darkText shadow-md transition-colors duration-300">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+
+      <a href="../../index.html" class="flex items-center shrink-0 h-14">
+        <img src="../assets/melodia.PNG" alt="Logo do aplicativo" class="w-[130px] max-h-full object-contain"/>
+      </a>
+
+      <nav class="flex items-center gap-8 text-sm md:text-base font-semibold">
+
+        <a href="../../index.html" class="flex items-center gap-2 hover:text-cornflower transition">
+          <i class="fa-solid fa-house"></i>
+          <span>Home</span>
+        </a>
+
+        <a href="../pages/app.html" class="flex items-center gap-2 hover:text-cornflower transition">
+          <i class="fa-solid fa-mobile-screen-button"></i>
+          <span>App</span>
+        </a>
+
+        <a href="../pages/suporte.html" class="flex items-center gap-2 bg-cosmicLatte text-sangria px-5 py-3 rounded-full hover:bg-cornflower dark:bg-darkText dark:text-darkCard dark:hover:bg-cornflower transition">
+          <i class="fa-solid fa-headset"></i>
+          <span>Suporte</span>
+        </a>
+
+        <a href="../pages/pessoal.html" class="flex items-center gap-2 hover:text-cornflower transition">
+          <i class="fa-solid fa-user"></i>
+          <span>Perfil</span>
+        </a>
+
+        <button id="toggle-dark" class="flex items-center justify-center w-11 h-11 rounded-full text-cosmicLatte hover:text-cornflower transition dark:bg-cosmicLatte dark:text-sangria dark:shadow-md" aria-label="Alternar modo escuro">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CONTEÚDO VAZIO PARA VOCÊS ADICIONAREM AS INFORMAÇÕES QUE QUEREM -->
+  <main class="flex-grow"></main>
+
+  <footer class="bg-sangria text-cosmicLatte dark:bg-darkCard dark:text-darkText mt-auto transition-colors duration-300">
+    <div class="max-w-6xl mx-auto px-6 py-8">
+
+      <div class="flex justify-center mb-6">
+      <img src="../assets/logo transparente.PNG" alt="Logo Melodia" class="w-[100px] h-auto object-contain"/>
+    </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+
+        <div class="flex flex-col items-center gap-2">
+          <i class="fa-regular fa-envelope text-xl"></i>
+          <p class="text-sm md:text-base">contato@melodia.com</p>
+        </div>
+
+        <div class="flex flex-col items-center gap-2">
+          <i class="fa-brands fa-whatsapp text-xl"></i>
+          <p class="text-sm md:text-base">(11) 99999-9999</p>
+        </div>
+
+        <div class="flex flex-col items-center gap-2">
+          <i class="fa-solid fa-mobile-screen-button text-xl"></i>
+          <p class="text-sm md:text-base">Melodia</p>
+        </div>
+
+        <div class="flex flex-col items-center gap-2">
+          <i class="fa-brands fa-instagram text-xl"></i>
+          <p class="text-sm md:text-base">@melodia</p>
+        </div>
+      </div>
+
+      <div class="border-t border-cosmicLatte/20 dark:border-darkText/20 mt-6 pt-4 text-center">
+        <p class="text-xs md:text-sm text-cosmicLatte/80 dark:text-darkText/80">
+          © 2026 Melodia - Todos os direitos reservados
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('toggle-dark');
+
+    btn.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+    });
+  </script>
+
+</body>
+</html>
