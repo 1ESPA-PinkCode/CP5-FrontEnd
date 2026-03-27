@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Perfil</title>
+  <title>Suporte</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
 
@@ -34,13 +34,13 @@
 <body class="bg-cosmicLatte text-sangria dark:bg-darkBg dark:text-darkText min-h-screen flex flex-col transition-colors duration-300">
 
   <header class="w-full bg-sangria text-cosmicLatte dark:bg-darkCard dark:text-darkText shadow-md transition-colors duration-300">
-    <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
 
       <a href="../../index.html" class="flex items-center shrink-0 h-14">
-        <img src="../assets/melodia.PNG" alt="Logo do aplicativo" class="w-[130px] max-h-full object-contain"/>
+        <img src="../assets/melodia.PNG" alt="Logo do aplicativo" class="w-[110px] sm:w-[125px] md:w-[135px] h-auto object-contain"/>
       </a>
 
-      <nav class="flex items-center gap-8 text-sm md:text-base font-semibold">
+      <nav class="w-full md:w-auto flex flex-wrap items-center justify-center md:justify-end gap-3 sm:gap-5 text-sm md:text-base font-semibold">
 
         <a href="../../index.html" class="flex items-center gap-2 hover:text-cornflower transition">
           <i class="fa-solid fa-house"></i>
@@ -69,17 +69,185 @@
     </div>
   </header>
 
-  <!-- CONTEÚDO VAZIO PARA VOCÊS ADICIONAREM AS INFORMAÇÕES QUE QUEREM -->
-  <main class="flex-grow"></main>
+  <main class="flex-grow max-w-7xl mx-auto w-full px-4 sm:px-6 py-6 sm:py-10">
+  <section class="grid grid-cols-1 xl:grid-cols-2 gap-6 lg:gap-8">
+
+      <!-- ESQUERDA: FORMULÁRIO -->
+      <div class="bg-white dark:bg-darkCard rounded-2xl shadow-lg p-8 transition-colors duration-300">
+        <h1 class="text-3xl font-bold mb-2">Central de Suporte</h1>
+        <p class="text-sangria/80 dark:text-darkText/80 mb-6">
+          Envie sua dúvida, sugestão ou problema e nossa equipe vai analisar.
+        </p>
+
+        <form id="form-suporte" class="space-y-5">
+          <div>
+            <label for="nome" class="block font-semibold mb-2">Nome</label>
+            <input type="text" id="nome" class="w-full rounded-xl border border-sangria/20 dark:border-darkText/20 bg-cosmicLatte dark:bg-darkBg px-4 py-3 outline-none focus:ring-4 focus:ring-cornflower/40" placeholder="Digite seu nome"/>
+          </div>
+
+          <div>
+            <label for="email" class="block font-semibold mb-2">E-mail</label>
+            <input type="email" id="email" class="w-full rounded-xl border border-sangria/20 dark:border-darkText/20 bg-cosmicLatte dark:bg-darkBg px-4 py-3 outline-none focus:ring-4 focus:ring-cornflower/40" placeholder="Digite seu e-mail"/>
+          </div>
+
+          <div>
+            <label for="assunto" class="block font-semibold mb-2">Assunto</label>
+            <input type="text" id="assunto" class="w-full rounded-xl border border-sangria/20 dark:border-darkText/20 bg-cosmicLatte dark:bg-darkBg px-4 py-3 outline-none focus:ring-4 focus:ring-cornflower/40" placeholder="Ex: não consigo entrar na conta"/>
+          </div>
+
+          <div>
+            <label for="mensagem" class="block font-semibold mb-2">Mensagem</label>
+            <textarea id="mensagem" rows="6" class="w-full rounded-xl border border-sangria/20 dark:border-darkText/20 bg-cosmicLatte dark:bg-darkBg px-4 py-3 outline-none focus:ring-4 focus:ring-cornflower/40 resize-none" placeholder="Escreva sua dúvida aqui" ></textarea>
+          </div>
+
+          <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2">
+            <button type="submit" class="w-full sm:w-auto bg-sangria hover:bg-[#7a0400] focus:ring-4 focus:ring-cornflower/40 active:bg-[#5f0300] text-cosmicLatte font-bold py-3 px-6 rounded-xl transition">
+                Enviar
+            </button>
+
+            <button type="button" id="btn-limpar" class="w-full sm:w-auto bg-cornflower hover:opacity-90 focus:ring-4 focus:ring-cornflower/40 active:opacity-80 text-sangria font-bold py-3 px-6 rounded-xl transition">
+                Limpar
+            </button>
+          </div>
+
+          <div id="mensagem-sucesso" class="hidden mt-4 text-green-600 dark:text-green-400 font-semibold">
+            Seu formulário foi enviado com sucesso! 🎉
+          </div>
+
+          <div id="mensagem-limpar" class="hidden mt-2 text-blue-600 dark:text-cornflower font-semibold">
+            O formulário foi limpo com sucesso! ✨
+          </div>
+        </form>
+      </div>
+
+      <!-- DIREITA -->
+      <div class="space-y-8">
+
+        <!-- FAQ -->
+        <div class="bg-white dark:bg-darkCard rounded-2xl shadow-lg p-5 sm:p-6 lg:p-8 transition-colors duration-300">
+          <h2 class="text-2xl font-bold mb-6">Perguntas frequentes</h2>
+
+          <div class="space-y-4">
+            <div class="group p-4 bg-cosmicLatte dark:bg-darkBg hover:bg-cornflower/20 rounded-xl transition">
+              <h3 class="text-lg font-bold group-hover:text-sangria dark:group-hover:text-cornflower">
+                Esqueci minha senha. O que faço?
+              </h3>
+              <p class="mt-1 group-hover:underline">
+                Você pode redefinir sua senha pela tela de login clicando em “Esqueci minha senha”.
+              </p>
+            </div>
+
+            <div class="group p-4 bg-cosmicLatte dark:bg-darkBg hover:bg-cornflower/20 rounded-xl transition">
+              <h3 class="text-lg font-bold group-hover:text-sangria dark:group-hover:text-cornflower">
+                Como alterar meu nome de usuário?
+              </h3>
+              <p class="mt-1 group-hover:underline">
+                Vá até seu perfil, clique em editar informações e atualize seu nome.
+              </p>
+            </div>
+
+            <div class="group p-4 bg-cosmicLatte dark:bg-darkBg hover:bg-cornflower/20 rounded-xl transition">
+              <h3 class="text-lg font-bold group-hover:text-sangria dark:group-hover:text-cornflower">
+                O aplicativo funciona offline?
+              </h3>
+              <p class="mt-1 group-hover:underline">
+                Algumas funções podem funcionar offline, mas recursos completos dependem da internet.
+              </p>
+            </div>
+
+            <div class="group p-4 bg-cosmicLatte dark:bg-darkBg hover:bg-cornflower/20 rounded-xl transition">
+              <h3 class="text-lg font-bold group-hover:text-sangria dark:group-hover:text-cornflower">
+                Posso compartilhar playlists com amigos?
+              </h3>
+              <p class="mt-1 group-hover:underline">
+                Sim, existe a opção de compartilhar playlists por link dentro do aplicativo.
+              </p>
+            </div>
+
+            <div class="group p-4 bg-cosmicLatte dark:bg-darkBg hover:bg-cornflower/20 rounded-xl transition">
+              <h3 class="text-lg font-bold group-hover:text-sangria dark:group-hover:text-cornflower">
+                Como excluir minha conta?
+              </h3>
+              <p class="mt-1 group-hover:underline">
+                Essa opção fica nas configurações da conta, na área de privacidade e segurança.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- MANUAL COM TABS -->
+        <div class="bg-white dark:bg-darkCard rounded-2xl shadow-lg p-8 transition-colors duration-300">
+          <h2 class="text-2xl font-bold mb-6">Manual do aplicativo</h2>
+
+          <div>
+            <input type="radio" id="tab1" name="tabs" class="peer/aba1 hidden" checked />
+            <label for="tab1" class="inline-block w-full sm:w-auto cursor-pointer px-4 py-2 text-sm sm:text-base text-sangria/70 dark:text-darkText/70 hover:text-sangria dark:hover:text-darkText peer-checked/aba1:text-sangria dark:peer-checked/aba1:text-cornflower peer-checked/aba1:border-b-2 peer-checked/aba1:border-sangria dark:peer-checked/aba1:border-cornflower" >
+                Como fazer login
+            </label>
+
+            <input type="radio" id="tab2" name="tabs" class="peer/aba2 hidden" />
+            <label for="tab2" class="inline-block cursor-pointer px-4 py-2 text-sangria/70 dark:text-darkText/70 hover:text-sangria dark:hover:text-darkText peer-checked/aba2:text-sangria dark:peer-checked/aba2:text-cornflower peer-checked/aba2:border-b-2 peer-checked/aba2:border-sangria dark:peer-checked/aba2:border-cornflower">
+              Criar playlist
+            </label>
+
+            <input type="radio" id="tab3" name="tabs" class="peer/aba3 hidden" />
+            <label for="tab3" class="inline-block cursor-pointer px-4 py-2 text-sangria/70 dark:text-darkText/70 hover:text-sangria dark:hover:text-darkText peer-checked/aba3:text-sangria dark:peer-checked/aba3:text-cornflower peer-checked/aba3:border-b-2 peer-checked/aba3:border-sangria dark:peer-checked/aba3:border-cornflower" >
+              Curtir músicas
+            </label>
+
+            <input type="radio" id="tab4" name="tabs" class="peer/aba4 hidden" />
+            <label for="tab4" class="inline-block cursor-pointer px-4 py-2 text-sangria/70 dark:text-darkText/70 hover:text-sangria dark:hover:text-darkText peer-checked/aba4:text-sangria dark:peer-checked/aba4:text-cornflower peer-checked/aba4:border-b-2 peer-checked/aba4:border-sangria dark:peer-checked/aba4:border-cornflower" >
+              Editar perfil
+            </label>
+
+            <div class="w-full border-t border-sangria/20 dark:border-darkText/20 -mt-px"></div>
+
+            <div class="py-4 hidden peer-checked/aba1:block">
+              <p class="text-lg font-semibold mb-2">Como fazer login</p>
+              <p>
+                Abra o aplicativo, clique em “Entrar”, digite seu e-mail e sua senha e pressione o botão de acesso.
+                Caso não lembre a senha, use a opção de recuperação.
+              </p>
+            </div>
+
+            <div class="py-4 hidden peer-checked/aba2:block">
+              <p class="text-lg font-semibold mb-2">Como criar uma playlist</p>
+              <p>
+                Vá até a área de playlists, clique em “Nova playlist”, escolha um nome e depois adicione as músicas
+                que você quiser salvar nela.
+              </p>
+            </div>
+
+            <div class="py-4 hidden peer-checked/aba3:block">
+              <p class="text-lg font-semibold mb-2">Como curtir músicas</p>
+              <p>
+                Ao encontrar uma música que você gosta, clique no ícone de coração. Assim ela ficará salva na sua lista
+                de favoritas.
+              </p>
+            </div>
+
+            <div class="py-4 hidden peer-checked/aba4:block">
+              <p class="text-lg font-semibold mb-2">Como editar o perfil</p>
+              <p>
+                Entre na aba de perfil, clique em editar informações e atualize sua foto, nome de usuário ou outras
+                configurações disponíveis.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
 
   <footer class="bg-sangria text-cosmicLatte dark:bg-darkCard dark:text-darkText mt-auto transition-colors duration-300">
     <div class="max-w-6xl mx-auto px-6 py-8">
 
       <div class="flex justify-center mb-6">
-      <img src="../assets/logo transparente.PNG" alt="Logo Melodia" class="w-[100px] h-auto object-contain"/>
+      <img src="../assets/logo transparente.PNG" alt="Logo Melodia" class="w-[85px] sm:w-[100px] h-auto object-contain"/>
     </div>
 
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6 text-center">
 
         <div class="flex flex-col items-center gap-2">
           <i class="fa-regular fa-envelope text-xl"></i>
@@ -111,12 +279,28 @@
   </footer>
 
   <script>
-    const btn = document.getElementById('toggle-dark');
+  const btnDark = document.getElementById('toggle-dark');
+  const form = document.getElementById('form-suporte');
+  const btnLimpar = document.getElementById('btn-limpar');
+  const msgSucesso = document.getElementById('mensagem-sucesso');
+  const msgLimpar = document.getElementById('mensagem-limpar');
 
-    btn.addEventListener('click', () => {
-      document.documentElement.classList.toggle('dark');
-    });
-  </script>
+  btnDark.addEventListener('click', () => {
+    document.documentElement.classList.toggle('dark');
+  });
+
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    msgSucesso.classList.remove('hidden');
+    msgLimpar.classList.add('hidden');
+  });
+
+  btnLimpar.addEventListener('click', () => {
+    form.reset();
+    msgLimpar.classList.remove('hidden');
+    msgSucesso.classList.add('hidden');
+  });
+</script>
 
 </body>
 </html>
