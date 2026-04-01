@@ -34,52 +34,210 @@
 <body class="bg-cosmicLatte text-sangria dark:bg-darkBg dark:text-darkText min-h-screen flex flex-col transition-colors duration-300">
 
   <header class="w-full bg-sangria text-cosmicLatte dark:bg-darkCard dark:text-darkText shadow-md transition-colors duration-300">
-    <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
 
       <a href="./index.html" class="flex items-center shrink-0 h-14">
-         <img src="./src/assets/melodia.PNG" alt="Logo do aplicativo" class="w-[130px] max-h-full object-contain"/>
+        <img src="./src/assets/melodia.PNG" alt="Logo do aplicativo" class="w-[110px] sm:w-[125px] md:w-[135px] h-auto object-contain"/>
       </a>
 
-      <nav class="flex items-center gap-8 text-sm md:text-base font-semibold">
+      <nav class="w-full md:w-auto flex flex-wrap items-center justify-center md:justify-end gap-3 sm:gap-5 text-sm md:text-base font-semibold">
 
-        <a href="./index.html" class="flex items-center gap-2 bg-cosmicLatte text-sangria px-5 py-3 rounded-full hover:bg-cornflower dark:bg-darkText dark:text-darkCard dark:hover:bg-cornflower transition">
-            <i class="fa-solid fa-house"></i>
-            <span>Home</span>
+        <a href="./index.html" class="flex items-center gap-2 bg-cosmicLatte text-sangria px-5 py-3 rounded-full dark:bg-darkText dark:text-darkCard hover:bg-cornflower dark:hover:bg-cornflower transition">
+          <i class="fa-solid fa-house"></i>
+          <span>Home</span>
         </a>
 
         <a href="./src/pages/app.html" class="flex items-center gap-2 hover:text-cornflower transition">
-            <i class="fa-solid fa-mobile-screen-button"></i>
-            <span>App</span>
+          <i class="fa-solid fa-mobile-screen-button"></i>
+          <span>App</span>
         </a>
 
         <a href="./src/pages/suporte.html" class="flex items-center gap-2 hover:text-cornflower transition">
-            <i class="fa-solid fa-headset"></i>
-            <span>Suporte</span>
+          <i class="fa-solid fa-headset"></i>
+          <span>Suporte</span>
         </a>
 
-        <a href="./src/pages/pessoal.html" class="flex items-center gap-2 hover:text-cornflower transition">
-            <i class="fa-solid fa-user"></i>
-            <span>Perfil</span>
+        <a href="./src/pages/suporte.html" class="flex items-center gap-2 hover:text-cornflower transition">
+          <i class="fa-solid fa-user"></i>
+          <span>Perfil</span>
         </a>
 
         <button id="toggle-dark" class="flex items-center justify-center w-11 h-11 rounded-full text-cosmicLatte hover:text-cornflower transition dark:bg-cosmicLatte dark:text-sangria dark:shadow-md" aria-label="Alternar modo escuro">
             <i class="fa-solid fa-moon"></i>
         </button>
-    </nav>
+      </nav>
     </div>
   </header>
 
-  <!-- CONTEÚDO VAZIO PARA VOCÊS ADICIONAREM AS INFORMAÇÕES QUE QUEREM -->
-  <main class="flex-grow"></main>
+  <main class="flex-grow"> 
+    <section class="relative text-cosmicLatte text-center bg-cover bg-center bg-no-repeat min-h-screen flex items-center justify-center"
+      style="background-image: url('./src/assets/fundo_hero.PNG');">
+  
+      <div class="absolute inset-0 bg-sangria/40"></div>
+  
+      <div class="relative z-10 py-24 px-6">
+        <h1 class="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight leading-tight max-w-3xl mx-auto">
+          Melodia: Sua trilha sonora começa aqui.
+        </h1>
+  
+        <p class="mt-4 text-lg md:text-xl text-cosmicLatte/80 max-w-xl mx-auto">
+          Crie playlists, descubra artistas e ouça do seu jeito. Tudo em um só lugar.
+        </p>
+
+        <a href="#musicas" class="inline-block mt-8 px-8 py-4 bg-cosmicLatte text-sangria font-bold text-lg rounded-full hover:bg-cornflower hover:scale-105 transition duration-300">
+          Descobrir Músicas 
+        </a>
+      </div>
+    </section>
+
+    <section id="musicas" class="bg-cosmicLatte text-sangria dark:bg-darkCard py-20 px-6">
+      <div class="max-w-5xl mx-auto text-center">
+        <h2 class="text-2xl md:text-3xl font-black dark:text-darkText">Por que escolher o Melodia?</h2>
+        <p class="mt-3 text-base md:text-lg text-sangria/80 dark:text-darkText/80 max-w-xl mx-auto">
+          Tudo que você precisa para viver a música do seu jeito!
+        </p>
+      </div>
+    
+      <div class="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+    
+        <div class="bg-white dark:bg-darkBg rounded-2xl p-6 text-center shadow-md hover:scale-105 hover:shadow-xl transition duration-300">
+          <div class="flex items-center justify-center w-14 h-14 bg-sangria dark:bg-darkCard rounded-full mx-auto mb-4">
+            <i class="fa-solid fa-headphones text-cosmicLatte text-2xl"></i>
+          </div>
+          <h3 class="font-black text-lg text-sangria dark:text-darkText">Qualidade de Som</h3>
+          <p class="mt-2 text-sm text-sangria/70 dark:text-darkText/70">
+            Ouça suas músicas favoritas com qualidade de som superior.
+          </p>
+        </div>
+    
+        <div class="bg-white dark:bg-darkBg rounded-2xl p-6 text-center shadow-md hover:scale-105 hover:shadow-xl transition duration-300">
+          <div class="flex items-center justify-center w-14 h-14 bg-sangria dark:bg-darkCard rounded-full mx-auto mb-4">
+            <i class="fa-solid fa-music text-cosmicLatte text-2xl"></i>
+          </div>
+          <h3 class="font-black text-lg text-sangria dark:text-darkText">Playlists Personalizadas</h3>
+          <p class="mt-2 text-sm text-sangria/70 dark:text-darkText/70">
+            Crie e organize suas playlists do seu jeito, quando quiser.
+          </p>
+        </div>
+    
+        <div class="bg-white dark:bg-darkBg rounded-2xl p-6 text-center shadow-md hover:scale-105 hover:shadow-xl transition duration-300">
+          <div class="flex items-center justify-center w-14 h-14 bg-sangria dark:bg-darkCard rounded-full mx-auto mb-4">
+            <i class="fa-solid fa-magnifying-glass text-cosmicLatte text-2xl"></i>
+          </div>
+          <h3 class="font-black text-lg text-sangria dark:text-darkText">Descubra Artistas</h3>
+          <p class="mt-2 text-sm text-sangria/70 dark:text-darkText/70">
+            Encontre novos artistas e músicas que combinam com seu gosto.
+          </p>
+        </div>
+    
+        <div class="bg-white dark:bg-darkBg rounded-2xl p-6 text-center shadow-md hover:scale-105 hover:shadow-xl transition duration-300">
+          <div class="flex items-center justify-center w-14 h-14 bg-sangria dark:bg-darkCard rounded-full mx-auto mb-4">
+            <i class="fa-solid fa-mobile-screen-button text-cosmicLatte text-2xl"></i>
+          </div>
+          <h3 class="font-black text-lg text-sangria dark:text-darkText">Interface Intuitiva</h3>
+          <p class="mt-2 text-sm text-sangria/70 dark:text-darkText/70">
+            Design simples e moderno para você focar no que importa: a música.
+          </p>
+        </div>
+    
+      </div>
+    </section>
+
+    <section class="bg-sangria text-cosmicLatte dark:bg-darkBg dark:text:darkText py-20 px-6">
+      <div class="max-w-5xl mx-auto text-center">
+        <h2 class="text-2xl md:text-3xl font-black">O que nossos usuários dizem?</h2>
+        <p class="mt-3 text-base md:text-lg text-cosmicLatte/70 dark:text-darkText/70 max-w-xl mx-auto">
+          Quem já usa o Melodia não consegue mais parar. 🎵
+        </p>
+      </div>
+
+    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+
+  <div class="bg-cosmicLatte/10 dark:bg-darkCard rounded-2xl p-6 text-left hover:scale-105 transition duration-300">
+    <p class="text-cosmicLatte/90 dark:text-darkText/90 text-sm leading-relaxed">
+      "Desde que comecei a usar o Melodia, descobri artistas incríveis que nunca teria encontrado em outro lugar. A qualidade do som é surreal!"
+    </p>
+    <div class="flex items-center gap-3 mt-5">
+      <div class="w-10 h-10 rounded-full bg-sangria dark:bg-cosmicLatte/20 flex items-center justify-center">
+        <i class="fa-solid fa-user text-cosmicLatte text-sm"></i>
+      </div>
+      <div>
+        <p class="font-black text-sm text-cosmicLatte dark:text-darkText">Ana Lima</p>
+        <p class="text-xs text-cosmicLatte/60 dark:text-darkText/60">Usuária desde 2025</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-cosmicLatte/10 dark:bg-darkCard rounded-2xl p-6 text-left hover:scale-105 transition duration-300">
+    <p class="text-cosmicLatte/90 dark:text-darkText/90 text-sm leading-relaxed">
+      "Criei minhas playlists em minutos e o app ainda sugeriu músicas que eu amei. Interface super fácil de usar, recomendo demais!"
+    </p>
+    <div class="flex items-center gap-3 mt-5">
+      <div class="w-10 h-10 rounded-full bg-sangria dark:bg-cosmicLatte/20 flex items-center justify-center">
+        <i class="fa-solid fa-user text-cosmicLatte text-sm"></i>
+      </div>
+      <div>
+        <p class="font-black text-sm text-cosmicLatte dark:text-darkText">Pedro Souza</p>
+        <p class="text-xs text-cosmicLatte/60 dark:text-darkText/60">Usuário desde 2024</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-cosmicLatte/10 dark:bg-darkCard rounded-2xl p-6 text-left hover:scale-105 transition duration-300">
+    <p class="text-cosmicLatte/90 dark:text-darkText/90 text-sm leading-relaxed">
+      "O Melodia mudou minha relação com a música. Agora tenho uma trilha sonora pra cada momento do meu dia!"
+    </p>
+    <div class="flex items-center gap-3 mt-5">
+      <div class="w-10 h-10 rounded-full bg-sangria dark:bg-cosmicLatte/20 flex items-center justify-center">
+        <i class="fa-solid fa-user text-cosmicLatte text-sm"></i>
+      </div>
+      <div>
+        <p class="font-black text-sm text-cosmicLatte dark:text-darkText">Julia Ferreira</p>
+        <p class="text-xs text-cosmicLatte/60 dark:text-darkText/60">Usuária desde 2025</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+</section>
+
+<section class="bg-cosmicLatte text-sangria dark:bg-darkCard dark:text-darkText py-20 px-6">
+
+  <div class="max-w-3xl mx-auto text-center">
+    <h2 class="text-2xl md:text-3xl font-black">Sua biblioteca musical te espera 🎶</h2>
+    <p class="mt-3 text-base md:text-lg text-sangria/70 dark:text-darkText/70 max-w-xl mx-auto">
+      Salve suas músicas favoritas, monte sua coleção e acesse quando quiser.
+    </p>
+  </div>
+
+  <div class="flex flex-col items-center gap-6 mt-10">
+
+    <div class="flex items-center justify-center gap-4 text-sangria/40 dark:text-darkText/40 text-5xl">
+      <i class="fa-solid fa-headphones"></i>
+    </div>
+  
+    <a href="./src/pages/pessoal.html" class="inline-block px-10 py-4 bg-sangria text-cosmicLatte dark:bg-darkBg dark:text-darkText font-bold text-lg rounded-full hover:scale-105 transition duration-300">
+      Criar Minha Biblioteca 
+    </a>
+  
+    <p class="text-sm text-sangria/50 dark:text-darkText/50">
+      Já tem uma conta? <a href="./src/pages/pessoal.html" class="underline font-bold hover:text-sangria dark:hover:text-darkText transition">Acesse seu perfil</a>
+    </p>
+  
+  </div>
+
+</section>
+   
+  </main>
 
   <footer class="bg-sangria text-cosmicLatte dark:bg-darkCard dark:text-darkText mt-auto transition-colors duration-300">
     <div class="max-w-6xl mx-auto px-6 py-8">
 
       <div class="flex justify-center mb-6">
-      <img src="./src/assets/logo transparente.PNG" alt="Logo Melodia" class="w-[100px] h-auto object-contain"/>
+      <img src="./src/assets/logo transparente.PNG" alt="Logo Melodia" class="w-[85px] sm:w-[100px] h-auto object-contain"/>
     </div>
 
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6 text-center">
 
         <div class="flex flex-col items-center gap-2">
           <i class="fa-regular fa-envelope text-xl"></i>
@@ -112,7 +270,6 @@
 
   <script>
     const btn = document.getElementById('toggle-dark');
-
     btn.addEventListener('click', () => {
       document.documentElement.classList.toggle('dark');
     });
