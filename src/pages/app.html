@@ -12,6 +12,8 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
   />
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <script>
     tailwind.config = {
       darkMode: 'class',
@@ -104,12 +106,206 @@
 
         </div>
       </section>
-      <section class="bg-cosmicLatte py-14 border-b border-sangria/10">
+
+      <section class="bg-cosmicLatte py-14 border-b border-sangria/10 dark:bg-darkCard dark:text-darkText overflow-hidden transition-colors duration-300">
         <div class="max-w-5xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           <div><div class="stat-num text-3xl font-bold">80M+</div><p class="text-sm text-gray-500 mt-1">músicas</p></div>
           <div><div class="stat-num text-3xl font-bold">500+</div><p class="text-sm text-gray-500 mt-1">álbuns exclusivos</p></div>
           <div><div class="stat-num text-3xl font-bold">12M</div><p class="text-sm text-gray-500 mt-1">usuários ativos</p></div>
           <div><div class="stat-num text-3xl font-bold">150+</div><p class="text-sm text-gray-500 mt-1">países</p></div>
+        </div>
+      </section>
+
+      <section class="py-16 bg-white dark:bg-darkCard transition-colors">
+        <div class="max-w-3xl mx-auto px-6">
+
+          <p class="text-xs uppercase tracking-widest text-sangria mb-1">
+            Ouça uma amostra
+          </p>
+
+          <h2 class="text-sangria text-2xl mb-2 font-bold dark:text-darkText">
+            experimente agora
+          </h2>
+
+          <div class="w-16 h-[2px] bg-sangria mb-4"></div>
+
+          <p class="text-sm text-gray-500 dark:text-darkText/70 mb-8">
+            Dê o play e sinta a diferença do áudio Melodia. Qualidade lossless, sem interrupções.
+          </p>
+
+          <div class="rounded-2xl overflow-hidden border border-sangria/15 bg-cosmicLatte dark:bg-darkBg">
+
+            <div class="px-6 py-5 border-b border-sangria/10">
+              <div class="flex items-center gap-3 mb-3 flex-wrap">
+
+                <div class="w-10 h-10 rounded-lg overflow-hidden flex-shrink-0 bg-sangria/10">
+                  <img src="../assets/album1.png" alt="ARIRANG" class="w-full h-full object-cover"/>
+                </div>
+
+                <div>
+                  <p class="font-medium text-sm text-sangria dark:text-darkText">Swim</p>
+                  <p class="text-xs text-gray-400">BTS · ARIRANG (2026)</p>
+                </div>
+
+                <span class="ml-auto text-xs px-2 py-1 rounded-full bg-sangria text-cosmicLatte">
+                  Exclusivo Melodia
+                </span>
+
+              </div>
+
+              <audio controls class="w-full"></audio>
+            </div>
+
+            <div class="px-6 py-5 border-b border-sangria/10">
+              <div class="flex items-center gap-3 mb-3 flex-wrap">
+
+                <div class="w-10 h-10 rounded-lg overflow-hidden flex-shrink-0 bg-sangria/10">
+                  <img src="../assets/album2.png" alt="Short n Sweet" class="w-full h-full object-cover"/>
+                </div>
+
+                <div>
+                  <p class="font-medium text-sm text-sangria dark:text-darkText">Espresso</p>
+                  <p class="text-xs text-gray-400">Sabrina Carpenter · Short n' Sweet (2024)</p>
+                </div>
+
+                <span class="ml-auto text-xs px-2 py-1 rounded-full bg-sangria text-cosmicLatte">
+                  Exclusivo Melodia
+                </span>
+
+              </div>
+
+              <audio controls class="w-full"></audio>
+            </div>
+
+            <div class="px-6 py-5">
+              <div class="flex items-center gap-3 mb-3 flex-wrap">
+
+                <div class="w-10 h-10 rounded-lg overflow-hidden flex-shrink-0 bg-sangria/10">
+                  <img src="../assets/album3.png" alt="Born to Die" class="w-full h-full object-cover"/>
+                </div>
+
+                <div>
+                  <p class="font-medium text-sm text-sangria dark:text-darkText">Video Games</p>
+                  <p class="text-xs text-gray-400">Lana Del Rey · Born to Die (2012)</p>
+                </div>
+
+                <span class="ml-auto text-xs px-2 py-1 rounded-full bg-sangria text-cosmicLatte">
+                  Exclusivo Melodia
+                </span>
+
+              </div>
+
+              <audio controls class="w-full"></audio>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="albuns" class="py-20 bg-cosmicLatte dark:bg-darkBg transition-colors">
+        <div class="max-w-6xl mx-auto px-6">
+
+          <p class="text-xs uppercase tracking-widest text-sangria mb-1">
+            Só no Melodia
+          </p>
+
+          <h2 class="text-2xl text-sangria mb-2 font-bold dark:text-darkText">
+            álbuns exclusivos
+          </h2>
+
+          <div class="w-16 h-[2px] bg-sangria mb-4"></div>
+
+          <p class="text-sm text-gray-500 dark:text-darkText/70 mb-10 max-w-xl">
+            Lançamentos especiais e álbuns completos que você escuta primeiro — e com qualidade superior — somente aqui no Melodia.
+          </p>
+
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
+
+            <div class="bg-white dark:bg-darkCard rounded-2xl overflow-hidden border border-sangria/10 hover:-translate-y-2 hover:shadow-xl transition duration-300">
+              <div class="relative">
+                <img src="../assets/album1.png" alt="ARIRANG – BTS" class="aspect-square object-cover w-full">
+                <span class="absolute top-2.5 right-2.5 text-xs px-2 py-1 rounded-full bg-sangria text-cosmicLatte">
+                  Exclusivo
+                </span>
+              </div>
+
+              <div class="p-4">
+                <p class="font-medium text-sm text-sangria dark:text-darkText">ARIRANG</p>
+                <p class="text-xs text-gray-400 mt-0.5">BTS</p>
+                <p class="text-xs text-gray-400 mt-1">14 faixas · 2026</p>
+
+                <div class="mt-3 h-px bg-sangria/10"></div>
+
+                <p class="text-xs text-sangria mt-3 font-medium">
+                  Disponível no app
+                </p>
+              </div>
+            </div>
+
+            <div class="bg-white dark:bg-darkCard rounded-2xl overflow-hidden border border-sangria/10 hover:-translate-y-2 hover:shadow-xl transition duration-300">
+              <div class="relative">
+                <img src="../assets/album2.png" alt="Short n' Sweet – Sabrina Carpenter" class="aspect-square object-cover w-full">
+                <span class="absolute top-2.5 right-2.5 text-xs px-2 py-1 rounded-full bg-sangria text-cosmicLatte">
+                  Exclusivo
+                </span>
+              </div>
+
+              <div class="p-4">
+                <p class="font-medium text-sm text-sangria dark:text-darkText">Short n' Sweet</p>
+                <p class="text-xs text-gray-400 mt-0.5">Sabrina Carpenter</p>
+                <p class="text-xs text-gray-400 mt-1">12 faixas · 2024</p>
+
+                <div class="mt-3 h-px bg-sangria/10"></div>
+
+                <p class="text-xs text-sangria mt-3 font-medium">
+                  Disponível no app
+                </p>
+              </div>
+            </div>
+
+            <div class="bg-white dark:bg-darkCard rounded-2xl overflow-hidden border border-sangria/10 hover:-translate-y-2 hover:shadow-xl transition duration-300">
+              <div class="relative">
+                <img src="../assets/album3.png" alt="Born to Die – Lana Del Rey" class="aspect-square object-cover w-full">
+                <span class="absolute top-2.5 right-2.5 text-xs px-2 py-1 rounded-full bg-sangria text-cosmicLatte">
+                  Exclusivo
+                </span>
+              </div>
+
+              <div class="p-4">
+                <p class="font-medium text-sm text-sangria dark:text-darkText">Born to Die</p>
+                <p class="text-xs text-gray-400 mt-0.5">Lana Del Rey</p>
+                <p class="text-xs text-gray-400 mt-1">15 faixas · 2012</p>
+
+                <div class="mt-3 h-px bg-sangria/10"></div>
+
+                <p class="text-xs text-sangria mt-3 font-medium">
+                  Disponível no app
+                </p>
+              </div>
+            </div>
+
+            <div class="bg-white dark:bg-darkCard rounded-2xl overflow-hidden border border-sangria/10 hover:-translate-y-2 hover:shadow-xl transition duration-300">
+              <div class="relative">
+                <img src="../assets/album4.png" alt="Midnight Memories – One Direction" class="aspect-square object-cover w-full">
+                <span class="absolute top-2.5 right-2.5 text-xs px-2 py-1 rounded-full bg-sangria text-cosmicLatte">
+                  Exclusivo
+                </span>
+              </div>
+
+              <div class="p-4">
+                <p class="font-medium text-sm text-sangria dark:text-darkText">Midnight Memories</p>
+                <p class="text-xs text-gray-400 mt-0.5">One Direction</p>
+                <p class="text-xs text-gray-400 mt-1">18 faixas · 2013</p>
+
+                <div class="mt-3 h-px bg-sangria/10"></div>
+
+                <p class="text-xs text-sangria mt-3 font-medium">
+                  Disponível no app
+                </p>
+              </div>
+            </div>
+
+          </div>
+
         </div>
       </section>
       
