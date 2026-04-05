@@ -43,7 +43,8 @@ O projeto conta com as seguintes páginas e seções:
 
 ### Página App
 - Estrutura separada para apresentar conteúdos relacionados ao aplicativo
-- Navegação integrada com as demais páginas do projeto
+- Seção com prévia de músicas disponíveis na plataforma
+- Seção de download com opções para dispositivos mobile e desktop
 - Rodapé padronizado e botão para alternância de tema claro/escuro 
 
 ### Página de Perfil
@@ -71,8 +72,6 @@ O aplicativo foi pensado para:
 - pessoas que buscam novas descobertas musicais 
 
 ---
-
-## Tecnologias utilizadas
 
 ## Tecnologias utilizadas
 
